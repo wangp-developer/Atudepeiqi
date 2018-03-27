@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9B-eg-kX4">
+                                <rect key="frame" x="141" y="168" width="92" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="GXj-3u-5qv"/>
+                                </constraints>
+                                <state key="normal" title="获取拍照功能"/>
+                                <connections>
+                                    <action selector="TakePictureAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tMW-Ya-zaz"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Edz-Sf-ePL">
+                                <rect key="frame" x="67" y="384" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="ZbW-ih-gpO"/>
+                                    <constraint firstAttribute="height" constant="128" id="aHx-0G-Mjv"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="U9B-eg-kX4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0td-J2-5e8"/>
+                            <constraint firstItem="Edz-Sf-ePL" firstAttribute="top" secondItem="U9B-eg-kX4" secondAttribute="bottom" constant="150" id="6c1-3m-54k"/>
+                            <constraint firstItem="U9B-eg-kX4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="148" id="nRY-e3-LYd"/>
+                            <constraint firstItem="Edz-Sf-ePL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="pb8-1e-gsl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Edz-Sf-ePL" id="wuQ-0z-ms9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
