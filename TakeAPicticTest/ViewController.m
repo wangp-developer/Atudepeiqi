@@ -19,7 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-
+    NSLog(@"hahahahahaha");
 }
 - (IBAction)TakePictureAction:(id)sender {
     //创建UIImagePickerController
